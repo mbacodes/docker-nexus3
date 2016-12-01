@@ -74,7 +74,8 @@ RUN useradd -r -u 200 -m -c "nexus role account" -d ${NEXUS_DATA} -s /bin/false 
 
 VOLUME ${NEXUS_DATA}
 
-EXPOSE 8081
+EXPOSE 8081 5000 5001
+
 USER nexus
 WORKDIR ${NEXUS_HOME}
 
